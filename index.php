@@ -1,5 +1,15 @@
 <?php
 
+require "./class/VOD.php";
+
+$netflix = new VOD();
+$prime = new VOD();
+
+echo VOD::addSub();
+echo "<br>";
+echo $prime->setSubscribers(3);
+
+
 /**
  * 1. Créez une classe VOD et définissez les propriétés suivantes :
  *    - Créez une propriété films qui sera un tableau contenant 5 noms de films au choix.
